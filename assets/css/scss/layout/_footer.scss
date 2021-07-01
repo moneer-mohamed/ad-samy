@@ -1,0 +1,188 @@
+/*--------------------------------------------------------------
+# Start footer top
+--------------------------------------------------------------*/
+
+.footer {
+    background-color: $mainColor;
+    padding-top: 50px;
+    .site_info {
+        max-width: 38.6666%;
+        flex: 38.6666%;
+        padding: 0 15px;
+        .logo {
+            img {
+                width: 100px;
+            }
+        }
+        p {
+            color: #fff;
+            font-size: 14px;
+            padding: 20px 0;
+            margin-bottom: 0;
+        }
+        .con {
+            .item {
+                display: inline-block;
+                color: #fff;
+                font-size: 14px;
+                &:first-of-type {
+                    margin-inline-end: 15px;
+                }
+                i {
+                    color: #fff;
+                    margin-inline-end: 5px;
+                }
+            }
+        }
+        .sochial {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            a {
+                color: #fff;
+                width: 35px;
+                height: 35px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: transparent;
+                border-radius: 50%;
+                margin-inline-end: 10px;
+                border: 1px solid #fff;
+                &:hover {
+                    color: $mainColor;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+    .head {
+        color: #fbfbfb;
+        font-size: 18px;
+    }
+    .site_map {
+        max-width: 38.6666%;
+        flex: 38.6666%;
+        padding: 0 15px;
+        background-image: url(../img/map.png);
+        background-size: cover;
+        .list {
+            margin-top: 20px;
+            li {
+                margin-bottom: 5px;
+                a {
+                    color: #eaeaea;
+                    font-size: 15px;
+                    &:hover {
+                        color: $secColor;
+                    }
+                }
+            }
+        }
+    }
+    .apps {
+        max-width: 22.6666%;
+        flex: 22.6666%;
+        padding: 0 15px;
+        .images {
+            margin-top: 20px;
+            img {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+
+/*--------------------------------------------------------------
+# End footer top
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Start Copy Right
+--------------------------------------------------------------*/
+
+.copyright {
+    margin-top: 50px;
+    border-top: 1px solid rgba($color: #707070, $alpha: 0.27);
+    padding: 30px 0;
+    text-align: center;
+    p {
+        margin: 0;
+        color: #fff;
+        text-transform: capitalize;
+    }
+}
+
+@media(max-width:1199.98px) {
+    .footer {
+        .site_info,
+        .site_map {
+            max-width: 50%;
+            flex: 50%;
+            margin-bottom: 50px;
+        }
+        .apps {
+            max-width: 100%;
+            flex: 100%;
+            margin-bottom: 50px;
+        }
+        .apps .images {
+            display: flex;
+            flex-wrap: wrap;
+            img {
+                width: 170px;
+                margin-bottom: 10px;
+                &:first-of-type {
+                    padding-inline-end: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:767.98px) {
+    .footer {
+        .site_info,
+        .site_map {
+            max-width: 100%;
+            flex: 100%;
+        }
+        .site_map {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media(max-width:575.98px) {
+    .footer {
+        .location,
+        .apps {
+            max-width: 100%;
+            flex: 100%;
+        }
+        .site_map {
+            .single_list {
+                margin-bottom: 30px;
+            }
+        }
+        .apps {
+            .images img {
+                width: 50%;
+            }
+        }
+    }
+    .copyright {
+        margin-top: 0;
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+
+/*--------------------------------------------------------------
+# End Copy Right
+--------------------------------------------------------------*/

@@ -1,0 +1,41 @@
+/****Prifixes Mixin******/
+
+@mixin prifixer($property, $value, $prifixes: ()) {
+    @each $prifix in $prifixes {
+        #{'-' + $prifix + '-' + $property}: $value;
+    }
+    #{$property}: $value;
+}
+
+
+/*****background properties Mixin*****/
+
+@mixin bgProperties ($pathImage, $position) {
+    background-image: url($pathImage);
+    background-size: cover;
+    background-position: $position;
+    background-repeat: no-repeat;
+    @content;
+}
+
+@mixin start_FadeInDown {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+}
+
+@mixin animation_FadeInDown {
+    animation: fadeInDown 1s both;
+    -webkit-animation: fadeInDown 1s both;
+}
+
+@mixin start_FadeInUp {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+
+@mixin animation_FadeInUp {
+    animation: fadeInUp 1s both;
+    -webkit-animation: fadeInUp 1s both;
+}

@@ -1,0 +1,39 @@
+/*--------------------------------------------------------------
+# Start Main Heading
+--------------------------------------------------------------*/
+
+.main-heading {
+    text-align: center;
+    margin-bottom: 30px;
+    span {
+        color: #5E5E5E;
+        font-size: 14px;
+    }
+    h2 {
+        color: $mainColor;
+        font-weight: 900;
+        font-size: 40px;
+        text-transform: capitalize;
+    }
+}
+
+.sp_title {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    &::after {
+        position: absolute;
+        content: "";
+        width: 60px;
+        height: 3px;
+        background: transparent linear-gradient( 270deg, #FFFFFF 0%, #0397FB 52%, #0D4B74 100%) 0% 0% no-repeat padding-box;
+        top: 50%;
+        right: -70px;
+        transform: translateY(-50%);
+    }
+}
+
+
+/*--------------------------------------------------------------
+# End Main Heading
+--------------------------------------------------------------*/

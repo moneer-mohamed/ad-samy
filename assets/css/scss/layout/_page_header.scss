@@ -1,0 +1,42 @@
+.page_header {
+    height: 250px;
+    background-color: #00487a;
+    background-size: cover;
+    background-image: url(../img/page_header.jpg);
+    background-position: 0px -87.56px;
+    display: flex;
+    align-items: center;
+    &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #000, $alpha: 0.7);
+    }
+    &:after {
+        content: "";
+        width: 100%;
+        height: 16px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-image: url(../img/ripped-paper-slider-3.png);
+        background-position: center center;
+        background-size: cover;
+    }
+    .hero {
+        text-align: center;
+        color: #fff;
+        position: relative;
+        h4 {
+            margin-top: 10px;
+            font-size: 30px;
+        }
+        h2 {
+            font-weight: 900;
+            font-size: 50px;
+        }
+    }
+}

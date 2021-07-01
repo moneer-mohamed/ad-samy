@@ -1,0 +1,31 @@
+body {
+    direction: ltr;
+}
+
+.toggle-btn {
+    left: 0;
+    right: unset;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 0%;
+}
+
+.nav__toggle {
+    left: 10px;
+    right: unset;
+}
+
+.title-separator:before,
+.title-separator:after {
+    left: 43px;
+    right: unset;
+}
+
+.title-separator:after {
+    left: 58px;
+}
+
+@media (max-width: 575.98px) {
+    .nav__toggle {
+        left: 5px;
+    }
+}

@@ -1,0 +1,130 @@
+/*--------------------------------------------------------------
+# Start Nav Top
+--------------------------------------------------------------*/
+
+.topbar {
+    background: linear-gradient(90deg, $mainColor 0%, $secColor 100%);
+    padding: 7px 0;
+    .container,
+    .container-fluid {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .topbar__left {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        .topbar__social {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            .fa-facebook-square:before {
+                content: "\f39e";
+            }
+            .icon {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                border: 1px solid #fff;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                transition: .3s;
+                color: #fff;
+                font-size: 13px;
+                &:not(:last-of-type) {
+                    margin-inline-end: 10px;
+                }
+                &:hover {
+                    color: $mainColor !important;
+                    background-color: #fff;
+                }
+            }
+        }
+        p {
+            font-size: 15px;
+            font-weight: 500;
+            color: #6e7673;
+            margin: 0;
+        }
+    }
+    .topbar__right {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        >a {
+            color: #fff;
+            font-size: 12px;
+            -webkit-transition: all .3s ease;
+            transition: all .3s ease;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            font-weight: 500;
+            +a {
+                margin-inline-start: 30px;
+                &:hover {
+                    color: #f2f2f2;
+                }
+            }
+            >i {
+                font-size: 14px;
+                color: #fff;
+                -webkit-transition: all .3s ease;
+                transition: all .3s ease;
+                margin-inline-end: 10px;
+            }
+        }
+    }
+}
+
+@media(max-width:767.98px) {
+    .topbar {
+        padding: 10px 0;
+        .topbar__left {
+            display: none;
+        }
+        .topbar__right {
+            width: 100%;
+        }
+    }
+    .topbar .topbar__right>a+a {
+        margin-inline-start: 17px;
+    }
+}
+
+@media(max-width:575.98px) {
+    .topbar {
+        .topbar__right {
+            justify-content: center;
+        }
+    }
+}
+
+
+/*--------------------------------------------------------------
+# End Nav Top
+--------------------------------------------------------------*/
