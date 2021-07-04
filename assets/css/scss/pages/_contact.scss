@@ -1,0 +1,119 @@
+/*--------------------------------------------------------------
+# Start Contact info
+--------------------------------------------------------------*/
+
+.contact-info-section {
+    padding: 70px 0;
+    background-image: url(../img/bg_contacts.jpg);
+    background-size: cover;
+    position: relative;
+    z-index: 101;
+    .icon-box {
+        text-align: center;
+        position: relative;
+        .sc_icons_icon {
+            color: $mainColor;
+            transition: all ease .3s;
+            position: relative;
+            z-index: 2;
+            display: inline-block;
+            width: auto;
+            svg {
+                width: 4em;
+                height: 4em;
+                fill: none;
+                stroke: currentColor;
+                transition: all .3s ease;
+                path {
+                    stroke-dasharray: 74, 76;
+                    transition: .4s;
+                }
+            }
+        }
+        .icons_description {
+            margin-top: 2em;
+            color: #13162b;
+            font-size: 15px;
+            line-height: 1.6em;
+            font-weight: 400;
+            font-style: normal;
+            span {
+                display: block;
+            }
+            a {
+                color: #13162b;
+                &:hover {
+                    color: $mainColor;
+                }
+            }
+        }
+        &:hover {
+            path {
+                animation: dashoffset .4s linear;
+            }
+        }
+        @keyframes dashoffset {
+            0% {
+                stroke-dashoffset: 100;
+            }
+            100% {
+                stroke-dashoffset: 0;
+            }
+        }
+    }
+}
+
+
+/*--------------------------------------------------------------
+# End Contact info
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Start Contact modal
+--------------------------------------------------------------*/
+
+.contact-modal {
+    padding: 70px 0;
+    position: relative;
+    z-index: 100;
+    .form-control {
+        box-shadow: none;
+        outline: none;
+        height: 50px;
+        color: #c7c7c7;
+        border: 1px solid #c7c7c7;
+    }
+    textarea {
+        height: 150px !important;
+    }
+    .main-btn {
+        display: table;
+        margin: auto;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# End Contact modal
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Start Responsive 
+--------------------------------------------------------------*/
+
+@media(max-width:575px) {
+    .contact-info-section {
+        .icon-box {
+            margin-bottom: 30px;
+            svg {
+                width: 3em;
+                height: 3em;
+            }
+            .icons_description {
+                font-size: 14px;
+            }
+        }
+    }
+}

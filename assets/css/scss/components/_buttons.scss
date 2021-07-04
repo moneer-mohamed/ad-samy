@@ -61,6 +61,85 @@
             background-color: #1367a0;
         }
     }
+    &.white {
+        background-color: #fff;
+        color: $mainColor;
+        &:hover {
+            background-color: $mainColor;
+            color: #fff;
+        }
+    }
+}
+
+.animated-btn {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    background: $mainColor;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 73px 0 30px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1.08em;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    white-space: nowrap;
+    span {
+        position: relative;
+        z-index: 10;
+    }
+    .button-triangle,
+    .button-triangle2 {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transition: all 0.5s ease-in-out;
+    }
+    .button-triangle {
+        border-color: transparent transparent #ffffff transparent;
+        border-width: 0 0 50px 50px;
+    }
+    .button-triangle2 {
+        border-color: transparent transparent $mainColor transparent;
+        border-width: 0 0 0px 0px;
+    }
+    .button-icon {
+        background-color: #fff;
+        color: $mainColor;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 8px;
+        right: 8px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+        transition: all 0.5s ease-in-out;
+        i.fa {
+            line-height: 34px;
+            display: block;
+            text-align: center;
+        }
+    }
+    &:hover {
+        span {
+            color: $mainColor;
+        }
+        .button-triangle {
+            border-width: 0 0 400px 400px;
+        }
+        .button-triangle2 {
+            border-width: 0 0 50px 50px;
+        }
+    }
 }
 
 
