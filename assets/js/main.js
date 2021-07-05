@@ -48,8 +48,8 @@ $(document).ready(function() {
         navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
         loop: true,
         responsive: {
-            0: { items: 1 },
-            576: { items: 2 },
+            0: { items: 1, nav: true, dots: false },
+            576: { items: 2, dots: false },
             768: { items: 3 },
             992: { items: 4 },
             1200: { items: 5 }

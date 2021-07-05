@@ -2,21 +2,68 @@
 # Start Contact info
 --------------------------------------------------------------*/
 
-.contact-info-section {
-    padding: 70px 0;
-    background-image: url(../img/bg_contacts.jpg);
-    background-size: cover;
-    position: relative;
-    z-index: 101;
+.page-tittle-contact {
+    .display-table {
+        text-align: start;
+        .info {
+            p {
+                color: #fff;
+                font-size: 20px;
+                margin-top: 10px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.contact {
+    overflow: visible;
+    .content {
+        position: relative;
+        bottom: 120px;
+        background-color: $mainColor;
+        box-shadow: 0px 9px 20px rgba($color: #000000, $alpha: 0.11);
+    }
+    .contact-form {
+        height: 100%;
+        background-color: #fff;
+        padding: 40px;
+    }
+    .contact-info {
+        color: #fff;
+        padding: 40px;
+        .icon-box {
+            .contact-box-item {
+                &.title {
+                    color: #bdbdbd;
+                }
+            }
+            .sc_icons_icon svg {
+                fill: #fff;
+            }
+            .main-btn.solid {
+                background-color: #4CAF50;
+                color: #fff;
+                &:hover {
+                    background-color: #63db67;
+                }
+            }
+        }
+    }
     .icon-box {
         text-align: center;
         position: relative;
+        &:hover {
+            path {
+                animation: dashoffset .4s linear;
+            }
+        }
         .sc_icons_icon {
             color: $mainColor;
             transition: all ease .3s;
             position: relative;
             z-index: 2;
-            display: inline-block;
+            margin-bottom: 20px;
             width: auto;
             svg {
                 width: 4em;
@@ -30,6 +77,15 @@
                 }
             }
         }
+        .contact-box-item {
+            display: block;
+            margin-bottom: 10px;
+            &.title {
+                font-size: 20px;
+                color: #0d4b74;
+                font-weight: 900;
+            }
+        }
         .icons_description {
             margin-top: 2em;
             color: #13162b;
@@ -39,17 +95,14 @@
             font-style: normal;
             span {
                 display: block;
+                margin: 5px;
+                font-size: 18px;
             }
             a {
                 color: #13162b;
                 &:hover {
                     color: $mainColor;
                 }
-            }
-        }
-        &:hover {
-            path {
-                animation: dashoffset .4s linear;
             }
         }
         @keyframes dashoffset {
@@ -74,7 +127,7 @@
 --------------------------------------------------------------*/
 
 .contact-modal {
-    padding: 70px 0;
+    padding: 0 0 30px;
     position: relative;
     z-index: 100;
     .form-control {
@@ -83,9 +136,38 @@
         height: 50px;
         color: #c7c7c7;
         border: 1px solid #c7c7c7;
+        border: 1px solid #AAAAAA;
+        box-shadow: none;
+        border-radius: 8px;
+        background-size: 22px;
+        padding: 22px 10px;
+        background-position: 2% 50%;
+        background-repeat: no-repeat;
+        &::placeholder {
+            text-transform: capitalize;
+            color: #AAAAAA;
+            font-size: 14px;
+        }
+        &.user {
+            text-indent: 30px;
+            background-image: url(../img/user.svg);
+        }
+        &.email {
+            text-indent: 30px;
+            background-image: url(../img/message-2.svg);
+        }
+        &.telephone {
+            text-indent: 30px;
+            background-image: url(../img/telephone.svg);
+        }
+        &.file {
+            text-indent: 30px;
+            background-image: url(../img/file.svg);
+        }
     }
     textarea {
-        height: 150px !important;
+        padding: 10px !important;
+        height: 110px !important;
     }
     .main-btn {
         display: table;
@@ -103,7 +185,13 @@
 # Start Responsive 
 --------------------------------------------------------------*/
 
-@media(max-width:575px) {
+@media(max-width:767.98px) {
+    .contact .content {
+        bottom: 80px;
+    }
+}
+
+@media(max-width:575.98px) {
     .contact-info-section {
         .icon-box {
             margin-bottom: 30px;
