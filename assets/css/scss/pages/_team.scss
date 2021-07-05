@@ -1,0 +1,319 @@
+/*--------------------------------------------------------------
+# Start Team Page
+--------------------------------------------------------------*/
+
+.hero__video {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #fff;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #fafafa;
+    position: relative;
+    overflow: hidden;
+    height: 350px;
+    .fullscreen-video-wrap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        height: 350px;
+        video {
+            display: none;
+            min-width: 100%;
+            min-height: 100%;
+            position: absolute;
+            top: -100px;
+            left: 0;
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    .main-content {
+        max-width: 800px;
+        padding: 11rem 2rem;
+        z-index: 5;
+        position: relative;
+        color: #fff;
+        margin: 0 auto;
+        max-width: 800px !important;
+        padding: 7rem 1rem;
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+        }
+    }
+    .hero__video-overlay {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    svg.hero-curve {
+        z-index: 5;
+    }
+    .hero-curve {
+        display: block;
+        margin-bottom: -1px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        max-height: 117px;
+        -webkit-filter: drop-shadow(0px -28px 17px rgba(0, 140, 191, 0.07));
+        filter: drop-shadow(0px -28px 17px rgba(0, 140, 191, 0.07));
+    }
+}
+
+@media (min-width: 1256px) {
+    .fullscreen-video-wrap,
+    .hero__video,
+    .hero__video .main-content {
+        height: 600px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero__video {
+        height: 550px;
+        .main-content {
+            padding: 11rem 2rem;
+        }
+    }
+}
+
+@media (min-width: 960px) {
+    .hero__video {
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .hero__video {
+        background-image: none !important;
+        .fullscreen-video-wrap {
+            height: 550px;
+            video {
+                display: block;
+            }
+        }
+        h1 {
+            font-size: 3rem;
+        }
+    }
+}
+
+@media(max-width:575.98px) {
+    .history_company .two-col-timeline {
+        margin-top: 2em !important;
+    }
+}
+
+@media(max-width:575.98px) {
+    .hero__video .main-content {
+        padding: 3rem 1rem;
+        h1 {
+            font-size: 2rem;
+        }
+    }
+}
+
+
+/*--------------------------------------------------------------
+# End Team Page
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Start History Company
+--------------------------------------------------------------*/
+
+.history_company {
+    margin: 50px 0;
+    .two-col-timeline {
+        margin-top: 5em;
+        padding-bottom: 2em;
+        overflow: hidden;
+    }
+    .two-col-timeline__row {
+        margin: 0;
+        padding: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .two-col-timeline__col-text {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 50%;
+        padding: 0 3em;
+    }
+    .two-col-timeline__col-text-inner {
+        transform: translateX(350px);
+    }
+    .two-col-timeline__col-text-inner {
+        box-shadow: 0px 3px 6px rgb(0 0 0 / 20%);
+        display: flex;
+        padding: 1em;
+        border-radius: .5em;
+        position: relative;
+        background-color: white;
+    }
+    .two-col-timeline__row:nth-of-type(odd) .two-col-timeline__col-text-inner {
+        transform: translateX(-350px);
+    }
+    .two-col-timeline__row:nth-of-type(even) .two-col-timeline__dash {
+        right: auto;
+        left: 0;
+    }
+    .slide-in {
+        animation: slide-in 1s ease forwards;
+    }
+    .two-col-timeline__text-wrapper {
+        width: 100%;
+        padding: 0 1em;
+    }
+    .two-col-timeline__col-title {
+        margin-top: 0;
+    }
+    .two-col-timeline__row-number {
+        position: absolute;
+        left: 16px;
+        top: 10px;
+        font-size: 120px;
+        font-weight: 900;
+        line-height: 100px;
+        z-index: -1;
+    }
+    .two-col-timeline__row .two-col-timeline__dash {
+        background-color: $mainColor;
+        height: 10px;
+        right: 0;
+        width: 45px;
+        position: absolute;
+        top: calc(50% - 5px);
+    }
+    .two-col-timeline__row:nth-of-type(1) .two-col-timeline__line {
+        border-radius: 10px 10px 0 0;
+    }
+    .two-col-timeline__row .two-col-timeline__line {
+        position: absolute;
+        left: calc(50% - 5px);
+        width: 10px;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        background-color: $mainColor;
+    }
+    .two-col-timeline__row:nth-of-type(even) {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+    }
+}
+
+@keyframes slide-in {
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.two-col-timeline,
+.two-col-timeline__col-text,
+.two-col-timeline__row {
+    position: relative;
+}
+
+@media(max-width:991.98px) {
+    .history_company .two-col-timeline__row {
+        flex-wrap: wrap;
+        padding: 1em;
+        .two-col-timeline__col-text,
+        .two-col-timeline__col-image {
+            width: 100%;
+        }
+        .two-col-timeline__dash,
+        .two-col-timeline__line {
+            display: none;
+        }
+        .two-col-timeline__col-text {
+            padding: 0;
+        }
+        .two-col-timeline__row-number {
+            font-size: calc(3em + 6vw);
+        }
+    }
+}
+
+
+/*--------------------------------------------------------------
+# End History Company
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Start About team Company
+--------------------------------------------------------------*/
+
+.about_team_section {
+    padding: 170px 0;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: visible;
+    .generic-section-bg {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        right: 0;
+        left: 0;
+        width: 100%;
+        z-index: -0001;
+    }
+    .image {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 900px) {
+    .generic-content h2 {
+        font-size: 2.5em;
+    }
+}
+
+@media(max-width:1199.98px) {
+    .about_team_section {
+        padding: 50px 0;
+    }
+}
+
+@media(max-width:991.98px) {
+    .about_team_section {
+        .image {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+
+/*--------------------------------------------------------------
+# End About team Company
+--------------------------------------------------------------*/
