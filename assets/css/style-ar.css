@@ -1,0 +1,97 @@
+body {
+    direction: rtl;
+}
+
+.services_section .box .icon:after {
+    right: -6px;
+    left: auto;
+}
+
+.nav .sidebar {
+    right: 0;
+    left: auto;
+    transform: translateX(120%);
+}
+
+.about_section .about-info ul li::after {
+    right: 0;
+    left: auto;
+}
+
+.about_section .about-number {
+    right: 0;
+    left: auto;
+}
+
+.about_section .about-image .cup-b {
+    right: 36%;
+    left: auto;
+}
+
+.about_section .about-image .sec-img {
+    left: 33px;
+    right: auto;
+}
+
+.about_section .section-title::after,
+.sp_title::after,
+.about_info .main-heading h2:after {
+    left: -70px;
+    right: auto;
+    background: transparent linear-gradient( 90deg, #FFFFFF 0%, #0397FB 52%, #0D4B74 100%) 0% 0% no-repeat padding-box;
+}
+
+.about_info .shape {
+    left: 30px;
+    right: auto;
+}
+
+.blogs_page .blog .item .info .right {
+    float: left;
+}
+
+.blogs_page .blog .item .info a .icon {
+    margin-left: 2px;
+    margin-right: 0;
+}
+
+.blogs_page .blog .item .post-img .tag {
+    right: auto;
+    left: 15px;
+}
+
+.blogs_page .side-bar .widget .recent .thum {
+    float: right;
+}
+
+.blogs_page .side-bar .widget .recent a {
+    margin-right: 60px;
+    margin-left: auto;
+}
+
+.blogs_page .side-bar .widget ul li i {
+    transform: rotate( 180deg);
+}
+
+.contact-modal .form-control {
+    background-position: 98% 50%;
+}
+
+.history_company .two-col-timeline__row .two-col-timeline__dash {
+    left: 0;
+    right: auto;
+}
+
+.history_company .two-col-timeline__row:nth-of-type(even) .two-col-timeline__dash {
+    left: auto;
+    right: 0;
+}
+
+.history_company .two-col-timeline__row-number {
+    right: 16px;
+    left: auto;
+}
+
+.about_team_section .generic-section-bg {
+    transform: translateY(-50%) scaleX(-1);
+}

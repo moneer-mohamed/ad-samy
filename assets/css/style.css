@@ -2106,6 +2106,10 @@ img.figlio {
   .map_site_section .sochial .icon img {
     width: 100%;
   }
+
+  .about_info .shape {
+    display: none;
+  }
 }
 .services_hero {
   padding: 40px 0;
@@ -2492,6 +2496,9 @@ img.figlio {
   margin-top: 15px;
   padding-top: 15px;
   border-top: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .blogs_page .blog .item .info a {
   color: #999;
