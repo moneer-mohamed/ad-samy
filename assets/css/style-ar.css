@@ -95,3 +95,12 @@ body {
 .about_team_section .generic-section-bg {
     transform: translateY(-50%) scaleX(-1);
 }
+
+.blogs_page .blog .item .info a .author {
+    margin: 0 0px -6px 5px;
+}
+
+.posts .comments .com .img,
+.posts .add-comment .com .img {
+    float: right;
+}
