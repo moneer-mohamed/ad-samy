@@ -1439,6 +1439,11 @@ img.figlio {
   font-size: 14px;
   line-height: 25px;
   transition: 0.3s;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /*--------------------------------------------------------------
@@ -1628,11 +1633,21 @@ img.figlio {
 .counter-section .box .icon img {
   width: 42px;
 }
-.counter-section .box .counter {
-  margin: 10px 0 0;
+.counter-section .box .num {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.counter-section .box .num .counter {
   font-size: 40px;
   font-weight: 900;
   color: #fff;
+}
+.counter-section .box .num span {
+  font-size: 30px;
+  margin-inline-start: 5px;
 }
 .counter-section .box h4 {
   margin: 0;

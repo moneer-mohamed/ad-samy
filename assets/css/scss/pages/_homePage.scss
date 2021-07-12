@@ -560,6 +560,11 @@
                 font-size: 14px;
                 line-height: 25px;
                 transition: .3s;
+                display: -webkit-box;
+                -webkit-line-clamp: 6;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
         }
     }
@@ -769,11 +774,21 @@
                 width: 42px;
             }
         }
-        .counter {
-            margin: 10px 0 0;
-            font-size: 40px;
-            font-weight: 900;
+        .num {
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             color: #fff;
+            .counter {
+                font-size: 40px;
+                font-weight: 900;
+                color: #fff;
+            }
+            span {
+                font-size: 30px;
+                margin-inline-start: 5px;
+            }
         }
         h4 {
             margin: 0;
