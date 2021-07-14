@@ -17,12 +17,27 @@
                 justify-content: center;
                 text-align: center;
                 &.bg_1 {
-                    background-image: url(../img/hero.jpg);
+                    background-image: url(../img/header/01.jpg);
+                }
+                &.bg_2 {
+                    background-image: url(../img/header/02.jpg);
+                }
+                &.bg_3 {
+                    background-image: url(../img/header/03.jpg);
+                }
+                &.bg_4 {
+                    background-image: url(../img/header/04.jpg);
+                }
+                &.bg_5 {
+                    background-image: url(../img/header/05.jpg);
+                }
+                &.bg_6 {
+                    background-image: url(../img/header/06.jpg);
                 }
                 .overlay {
                     position: absolute;
                     content: "";
-                    background: rgb(0 0 0 / 59%);
+                    background: rgb(0 0 0 / 50%);
                     width: 100%;
                     height: 100%;
                     top: 0;
@@ -449,14 +464,22 @@
             display: none;
         }
     }
-}
-
-@media(max-width:991.98px) {
     .about-image .sec-img {
         display: none;
     }
+    .about_section img {
+        width: 100%;
+    }
+}
+
+@media(max-width:991.98px) {
     .about_section .about-image .cup-b {
         display: none;
+    }
+    .about_section img {
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
     }
 }
 
@@ -599,10 +622,16 @@
         padding: 50px 0;
         .content {
             padding: 0 120px;
+            .name {
+                color: #fff;
+                margin-top: 18px;
+                font-size: 17px;
+                display: block;
+            }
             p {
                 color: #D8D8D8;
                 font-size: 15px;
-                margin: 20px 0 10px;
+                margin: 10px 0 10px;
             }
         }
     }
@@ -838,84 +867,28 @@
             border-radius: 10px;
             background: #f9f9f9;
             transition: 0.3s;
+            text-align: center;
             .team-image {
                 display: inline-block;
                 position: relative;
                 img {
                     border-top-left-radius: 10px;
                     border-top-right-radius: 10px;
+                    height: 300px;
+                    object-fit: cover;
                 }
             }
             .team-item_info {
                 background-image: url(../img/miranda-stoun.png);
-                padding: 0 30px 36px;
+                padding: 0 18px 36px;
                 background-repeat: no-repeat;
                 background-position: 106% 94%;
                 text-align: center;
                 transition: 0.4s;
-                .team-info_icons {
-                    display: flex;
-                    position: relative;
-                    margin-top: -18px;
-                    transition: 0.4s;
-                    .team-icon {
-                        width: 36px;
-                        height: 36px;
-                        border-radius: unset;
-                        font-size: 14px;
-                        line-height: 36px;
-                        color: #ffffff;
-                        text-align: center;
-                        background: $mainColor;
-                        margin: -1px;
-                        transition: all 0.4s ease;
-                        &:not(:first-child) {
-                            opacity: 0;
-                            transform: translateX(-10px);
-                        }
-                        &:first-child {
-                            border-radius: 5px;
-                        }
-                        &:nth-child(2) {
-                            transition-delay: 0.05s;
-                        }
-                        &:nth-child(3) {
-                            transition-delay: 0.1s;
-                        }
-                        &:nth-child(4) {
-                            transition-delay: 0.15s;
-                        }
-                        &:nth-child(5) {
-                            transition-delay: 0.2s;
-                        }
-                        &:last-child {
-                            border-top-right-radius: 5px;
-                            border-bottom-right-radius: 5px;
-                        }
-                    }
-                    .fa-share-alt {
-                        transition: 0.4s;
-                        &:before {
-                            content: "\f1e0";
-                        }
-                    }
-                    a[class*="instagram"]:hover {
-                        background-color: #c32aa3;
-                    }
-                    a[class*="linkedin"]:hover {
-                        background-color: #007bb5;
-                    }
-                    a[class*="facebook"]:hover {
-                        background-color: #3b5998;
-                    }
-                    a[class*="twitter"]:hover {
-                        background-color: #1da1f2;
-                    }
-                }
                 .team-title {
                     margin-top: 22px;
                     margin-bottom: 0;
-                    font-size: 22px;
+                    font-size: 20px;
                     line-height: 1.25;
                     font-weight: 800;
                     a {
@@ -948,6 +921,12 @@
                 }
             }
         }
+    }
+}
+
+@media(max-width:767.98px) {
+    .our_team_section .item .team-item_content .team-image img {
+        object-fit: contain;
     }
 }
 

@@ -929,12 +929,27 @@ img.figlio {
   text-align: center;
 }
 .header .owl-carousel .owl-item .item.bg_1 {
-  background-image: url(../img/hero.jpg);
+  background-image: url(../img/header/01.jpg);
+}
+.header .owl-carousel .owl-item .item.bg_2 {
+  background-image: url(../img/header/02.jpg);
+}
+.header .owl-carousel .owl-item .item.bg_3 {
+  background-image: url(../img/header/03.jpg);
+}
+.header .owl-carousel .owl-item .item.bg_4 {
+  background-image: url(../img/header/04.jpg);
+}
+.header .owl-carousel .owl-item .item.bg_5 {
+  background-image: url(../img/header/05.jpg);
+}
+.header .owl-carousel .owl-item .item.bg_6 {
+  background-image: url(../img/header/06.jpg);
 }
 .header .owl-carousel .owl-item .item .overlay {
   position: absolute;
   content: "";
-  background: rgba(0, 0, 0, 0.59);
+  background: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
   top: 0;
@@ -1337,14 +1352,24 @@ img.figlio {
   .about_section .about-number {
     display: none;
   }
-}
-@media (max-width: 991.98px) {
+
   .about-image .sec-img {
     display: none;
   }
 
+  .about_section img {
+    width: 100%;
+  }
+}
+@media (max-width: 991.98px) {
   .about_section .about-image .cup-b {
     display: none;
+  }
+
+  .about_section img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
   }
 }
 @media (max-width: 575.98px) {
@@ -1473,10 +1498,16 @@ img.figlio {
 .ceo_bg .info .content {
   padding: 0 120px;
 }
+.ceo_bg .info .content .name {
+  color: #fff;
+  margin-top: 18px;
+  font-size: 17px;
+  display: block;
+}
 .ceo_bg .info .content p {
   color: #D8D8D8;
   font-size: 15px;
-  margin: 20px 0 10px;
+  margin: 10px 0 10px;
 }
 .ceo_bg .play {
   height: 100%;
@@ -1692,6 +1723,7 @@ img.figlio {
   border-radius: 10px;
   background: #f9f9f9;
   transition: 0.3s;
+  text-align: center;
 }
 .our_team_section .item .team-item_content .team-image {
   display: inline-block;
@@ -1700,78 +1732,21 @@ img.figlio {
 .our_team_section .item .team-item_content .team-image img {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  height: 300px;
+  object-fit: cover;
 }
 .our_team_section .item .team-item_content .team-item_info {
   background-image: url(../img/miranda-stoun.png);
-  padding: 0 30px 36px;
+  padding: 0 18px 36px;
   background-repeat: no-repeat;
   background-position: 106% 94%;
   text-align: center;
   transition: 0.4s;
 }
-.our_team_section .item .team-item_content .team-item_info .team-info_icons {
-  display: flex;
-  position: relative;
-  margin-top: -18px;
-  transition: 0.4s;
-}
-.our_team_section .item .team-item_content .team-item_info .team-info_icons .team-icon {
-  width: 36px;
-  height: 36px;
-  border-radius: unset;
-  font-size: 14px;
-  line-height: 36px;
-  color: #ffffff;
-  text-align: center;
-  background: #0D4B74;
-  margin: -1px;
-  transition: all 0.4s ease;
-}
-.our_team_section .item .team-item_content .team-item_info .team-info_icons .team-icon:not(:first-child) {
-  opacity: 0;
-  transform: translateX(-10px);
-}
-.our_team_section .item .team-item_content .team-item_info .team-info_icons .team-icon:first-child {
-  border-radius: 5px;
-}
-.our_team_section .item .team-item_content .team-item_info .team-info_icons .team-icon:nth-child(2) {
-  transition-delay: 0.05s;
-}
-.our_team_section .item .team-item_content .team-item_info .team-info_icons .team-icon:nth-child(3) {
-  transition-delay: 0.1s;
-}
-.our_team_section .item .team-item_content .team-item_info .team-info_icons .team-icon:nth-child(4) {
-  transition-delay: 0.15s;
-}
-.our_team_section .item .team-item_content .team-item_info .team-info_icons .team-icon:nth-child(5) {
-  transition-delay: 0.2s;
-}
-.our_team_section .item .team-item_content .team-item_info .team-info_icons .team-icon:last-child {
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-.our_team_section .item .team-item_content .team-item_info .team-info_icons .fa-share-alt {
-  transition: 0.4s;
-}
-.our_team_section .item .team-item_content .team-item_info .team-info_icons .fa-share-alt:before {
-  content: "";
-}
-.our_team_section .item .team-item_content .team-item_info .team-info_icons a[class*=instagram]:hover {
-  background-color: #c32aa3;
-}
-.our_team_section .item .team-item_content .team-item_info .team-info_icons a[class*=linkedin]:hover {
-  background-color: #007bb5;
-}
-.our_team_section .item .team-item_content .team-item_info .team-info_icons a[class*=facebook]:hover {
-  background-color: #3b5998;
-}
-.our_team_section .item .team-item_content .team-item_info .team-info_icons a[class*=twitter]:hover {
-  background-color: #1da1f2;
-}
 .our_team_section .item .team-item_content .team-item_info .team-title {
   margin-top: 22px;
   margin-bottom: 0;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.25;
   font-weight: 800;
 }
@@ -1803,6 +1778,11 @@ img.figlio {
   border-bottom-right-radius: 0;
 }
 
+@media (max-width: 767.98px) {
+  .our_team_section .item .team-item_content .team-image img {
+    object-fit: contain;
+  }
+}
 @media (max-width: 575px) {
   .laws h3 {
     font-size: 20px;
@@ -1903,8 +1883,8 @@ img.figlio {
 --------------------------------------------------------------*/
 .about_header {
   position: relative;
-  background-image: url(../img/about/header.png);
-  background-position: center;
+  background-image: url(../img/about/header.jpg);
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
   height: calc(100vh - 109px);
@@ -2062,6 +2042,9 @@ img.figlio {
 .map_site_section .map {
   height: 100%;
 }
+.map_site_section .map iframe {
+  width: 100%;
+}
 .map_site_section .sochial {
   display: flex;
   flex-direction: column;
@@ -2174,11 +2157,16 @@ img.figlio {
   background-position: center;
   background-size: cover;
 }
+.pricing_tables .main_item {
+  padding: 0 15px;
+}
 .pricing_tables .box_table {
-  box-shadow: 0px 14px 31px 0px rgba(0, 26, 87, 0.1);
   padding: 45px 35px 55px;
   margin-bottom: 30px;
   background: #fff;
+  min-height: 600px;
+  position: relative;
+  border: 1px solid #0D4B74;
 }
 .pricing_tables .box_table .head {
   display: flex;
@@ -2200,6 +2188,7 @@ img.figlio {
   font-size: 18px;
   color: #0D4B74;
   font-weight: 600;
+  text-transform: capitalize;
 }
 .pricing_tables .box_table .head .text .price {
   font-size: 40px;
@@ -2234,6 +2223,12 @@ img.figlio {
   text-align: center;
   position: relative;
   font-size: 14px;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  width: 85%;
+  margin: 0 auto;
 }
 .pricing_tables .box_table .info .main-btn i {
   position: absolute;
@@ -2456,6 +2451,13 @@ img.figlio {
 .blogs_page {
   padding: 80px 0;
   overflow: visible;
+}
+.blogs_page .blog_box .cont p {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .blogs_page .posts .item {
   margin-bottom: 30px;
@@ -2992,6 +2994,11 @@ img.figlio {
   position: relative;
   overflow: visible;
 }
+.about_team_section .generic-content-grid__item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
 .about_team_section .generic-section-bg {
   position: absolute;
   top: 50%;
@@ -3005,6 +3012,7 @@ img.figlio {
 }
 .about_team_section .image img {
   width: 100%;
+  border-radius: 10px;
 }
 
 @media (min-width: 900px) {

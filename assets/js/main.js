@@ -56,6 +56,21 @@ $(document).ready(function() {
         }
     });
 
+    /* ===============================  clients section  =============================== */
+    $(".pricing_tables .owl-carousel").owlCarousel({
+        autoplay: true,
+        nav: true,
+        dots: false,
+        navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+        loop: true,
+        responsive: {
+            0: { items: 1 },
+            576: { items: 1 },
+            768: { items: 2 },
+            1200: { items: 3 }
+        }
+    });
+
     /* ===============================  height of header  =============================== */
 
     $('#hero, #hero .carousel-content').height($(window).height() - 146)

@@ -275,6 +275,11 @@
     background-size: cover;
     position: relative;
     overflow: visible;
+    .generic-content-grid__item {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
     .generic-section-bg {
         position: absolute;
         top: 50%;
@@ -289,6 +294,7 @@
     .image {
         img {
             width: 100%;
+            border-radius: 10px;
         }
     }
 }

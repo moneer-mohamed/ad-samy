@@ -1,7 +1,7 @@
 .about_header {
     position: relative;
-    background-image: url(../img/about/header.png);
-    background-position: center;
+    background-image: url(../img/about/header.jpg);
+    background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
     height: calc(100vh - 109px);
@@ -157,6 +157,9 @@
     padding: 35px 0;
     .map {
         height: 100%;
+        iframe {
+            width: 100%;
+        }
     }
     .sochial {
         display: flex;
