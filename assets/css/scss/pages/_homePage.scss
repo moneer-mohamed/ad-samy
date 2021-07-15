@@ -966,6 +966,9 @@
                 background-color: #fff;
                 padding: 20px;
                 border-radius: 5px;
+                height: 122px;
+                display: flex;
+                align-items: center;
             }
             &:hover {
                 box-shadow: 0 3px 36px rgba($color: #FFEFDF, $alpha: 1.0);

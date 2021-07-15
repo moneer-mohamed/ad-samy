@@ -46,7 +46,7 @@ $(document).ready(function() {
         nav: false,
         dots: true,
         navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
-        loop: true,
+        loop: false,
         responsive: {
             0: { items: 1, nav: true, dots: false },
             576: { items: 2, dots: false },
