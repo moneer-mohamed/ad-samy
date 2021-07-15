@@ -583,9 +583,12 @@ img.figlio {
   font-size: 15px;
   line-height: 31px;
   margin-bottom: 20px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
   overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: capitalize;
 }
 .category-card .dec-icon:before {
   left: -15px;
@@ -3216,6 +3219,12 @@ img.figlio {
   font-weight: 600;
   font-size: 35px;
   margin: 0;
+  width: 50%;
+}
+@media (max-width: 767.98px) {
+  .page-tittle .info h3 {
+    width: 100%;
+  }
 }
 @media (max-width: 575.98px) {
   .page-tittle .info h3 {
