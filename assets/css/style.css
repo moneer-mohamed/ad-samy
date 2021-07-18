@@ -573,10 +573,11 @@ img.figlio {
 }
 .category-card .dec-icon {
   position: relative;
-  display: inline-table;
+  display: block;
   width: 80px;
   height: 80px;
   text-transform: capitalize;
+  margin: 0 auto;
 }
 .category-card .content-inner .cf-inner .inner p {
   color: #fff;
